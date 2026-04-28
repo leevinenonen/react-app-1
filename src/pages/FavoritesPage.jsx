@@ -1,4 +1,4 @@
-function Favorite() {
+function FavoritesPage() {
     return (
         <div className="no-favorites">
             <h1>Oh no! You haven't added favorite movies yet.</h1>
@@ -7,4 +7,4 @@ function Favorite() {
     )
 }
 
-export default Favorite
+export default FavoritesPage
