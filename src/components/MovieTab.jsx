@@ -1,4 +1,4 @@
-function Movie({movie}) {
+function MovieTab({movie}) {
     function whenFavorited() {
         console.log("favorited")
     }
@@ -15,4 +15,4 @@ function Movie({movie}) {
     </div>
 }
 
-export default Movie
+export default MovieTab
