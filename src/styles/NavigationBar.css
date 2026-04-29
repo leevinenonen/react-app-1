@@ -1,0 +1,38 @@
+.navigation-bar {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #101B23;
+}
+
+.navigation-bar > div, 
+.navigation-bar > nav { 
+  flex: 1; 
+}
+
+.favorites-button {
+  text-align: right;
+}
+
+.app-name {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navigation-bar {
+    padding: 1rem;
+  }
+
+  .app-name {
+    font-size: 24px;
+  }
+
+  .nav-link {
+    padding: 1rem;
+  }
+}

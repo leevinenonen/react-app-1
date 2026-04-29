@@ -1,4 +1,8 @@
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/App.css'
+import './styles/NavigationBar.css'
+import './styles/MovieTab.css'
+import './styles/DropdownMenu.css'
 import MovieTab from "./components/MovieTab"
 import HomePage from "./pages/HomePage"
 import {Routes, Route} from "react-router-dom"

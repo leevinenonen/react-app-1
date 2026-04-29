@@ -4,8 +4,8 @@ function MovieTab({movie}) {
     }
     return (
     <div className="movie-tab">
-        <div className="movie-img"><img src={movie.url} alt={movie.title}></img></div>
-        <div className="movie-layer">
+        <div className="movie-img-div"><img src={movie.url} alt={movie.title}></img></div>
+        <div className="movie-upper-layer">
             <button className="fav-button" onClick={whenFavorited}>Fav</button>
         </div>
         <div className="movie-information">

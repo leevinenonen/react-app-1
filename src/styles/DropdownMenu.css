@@ -1,0 +1,13 @@
+.btn.dropdown-button {
+  background-color: #254962;
+}
+
+btn.dropdown-button:hover, 
+.btn.dropdown-button:focus {
+  background-color: #254962;
+}
+
+.btn.dropdown-button:active,
+.show > .btn.dropdown-button.dropdown-toggle {
+  background-color: #254962;
+}

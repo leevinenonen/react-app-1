@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  background-color: #0D1317;
+}
