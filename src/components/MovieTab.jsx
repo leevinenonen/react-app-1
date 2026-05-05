@@ -9,8 +9,8 @@ function MovieTab({movie}) {
             <button className="fav-button" onClick={whenFavorited}>Fav</button>
         </div>
         <div className="movie-information">
-            <h2>{movie.title}</h2>
-            <p>{movie.release_date}</p>
+            <h2 className="movie-title">{movie.title}</h2>
+            <p className="movie-release-date">{movie.release_date}</p>
         </div>
     </div>)
 }

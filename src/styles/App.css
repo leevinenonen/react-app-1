@@ -1,6 +1,6 @@
 .app {
   display: flex;
-  padding: 2rem;
+  padding: 0.5rem;
   box-sizing: border-box;
   width: 100%;
   flex-direction: column;

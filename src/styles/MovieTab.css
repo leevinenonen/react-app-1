@@ -9,6 +9,14 @@
     background-color: #101B23;
 }
 
+.movie-title {
+    font-size: 16px;
+}
+
+.movie-release-date {
+    font-size: 14px;
+    }
+
 .movie-img-div {
     position: relative;
     aspect-ratio: 3/4;
@@ -27,4 +35,22 @@
 
 .movie-upper-layer {
     position: absolute;
+}
+
+
+.movie-information {
+    padding: 0.5rem;
+}
+
+.movie-information p {
+    opacity: 50%;
+}
+
+@media (min-width: 1024px) {
+  .movie-title {
+    font-size: 24px;
+    }
+    .movie-release-date {
+    font-size: 18px;
+    }
 }
