@@ -6,7 +6,8 @@ function NavigationBar() {
     <nav className="navigation-bar">
         <DropdownMenu />
         <div className="app-name">
-            <Link to="/">HOME CINEMA</Link>
+            {/*Force refresh when clicking home cinema to get today's picks */}
+            <a href="/">HOME CINEMA</a>
         </div>
         <div className="favorites-button">
             <Link to="/favorites">❤︎</Link>

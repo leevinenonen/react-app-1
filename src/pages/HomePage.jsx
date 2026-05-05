@@ -56,23 +56,6 @@ function HomePage () {
         loadPopularMovies()
     }, [])
 
-    const handleHomeReset = async () => {
-        setSearched("");
-        setCurrentSearch("");
-        setLoading(true);
-        try {
-                const popularMovies = await searchPopularMovies()
-                setMovies(popularMovies)
-            } catch (error) {
-                alert("Failed to load movies: " + error)
-                console.log(error)
-                setError("Failed to load movies!")
-            }
-            finally {
-                setLoading(false)
-            }
-    }
-    
     return (
     <div className="home-page">
         <form onSubmit={Search} className="search-box">
