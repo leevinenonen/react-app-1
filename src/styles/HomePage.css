@@ -33,15 +33,31 @@
 
 .search-input {
     flex: 1;
-    padding: 12px 15px;
-    border: 1px solid #333;
+    padding: 6px 8px;
+    border: 0px solid #254962;
     background-color: #173143;
     border-radius: 8px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .search-button {
     border-radius: 8px;
     cursor: pointer;
+}
+
+.search-button {
+  background-color: #173143;
+  border: none;
+  transition: all 0.3s ease;
+
+}
+
+.search-button:hover {
+  background-color: #254962;
+}
+
+.search-button:active {
+  transform: translateY(-5px);
 }
 
 /*rows of 4 for dekstop */

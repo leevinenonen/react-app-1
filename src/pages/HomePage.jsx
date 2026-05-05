@@ -7,9 +7,10 @@ import {useEffect} from "react"
 function HomePage () {
     // Let's use useState to handle searching
     const [Searched, setSearched] = useState("")
+    const [currentSearch, setCurrentSearch] = useState("");
     const [movies, setMovies] = useState([]);
     const [error, setError] = useState(null)
-    const[loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true)
 
     const Search = async (e) => {
         e.preventDefault();
@@ -17,6 +18,7 @@ function HomePage () {
         if (loading) return
 
         setLoading(true)
+        setCurrentSearch(Searched)
 
         try {
             const searchResults = await searchMovies(Searched)
@@ -54,12 +56,34 @@ function HomePage () {
         loadPopularMovies()
     }, [])
 
+    const handleHomeReset = async () => {
+        setSearched("");
+        setCurrentSearch("");
+        setLoading(true);
+        try {
+                const popularMovies = await searchPopularMovies()
+                setMovies(popularMovies)
+            } catch (error) {
+                alert("Failed to load movies: " + error)
+                console.log(error)
+                setError("Failed to load movies!")
+            }
+            finally {
+                setLoading(false)
+            }
+    }
+    
     return (
     <div className="home-page">
         <form onSubmit={Search} className="search-box">
             <input type="text" placeholder="Search for movies..." className="search-input" value={Searched} onChange={(e) => setSearched(e.target.value)}></input>
             <button type="submit" className="search-button">Search</button>
         </form>
+
+        {/*Show results for only after pressing search button */}
+        <h1 className="page-title">
+        {currentSearch === "" ? "Today's picks" : `Results for "${currentSearch}"`}
+        </h1>
 
         <div className="movie-grid">
             {/*Let's use map function to map the movie objects */}

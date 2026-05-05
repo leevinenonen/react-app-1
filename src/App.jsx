@@ -9,16 +9,17 @@ import HomePage from "./pages/HomePage"
 import {Routes, Route} from "react-router-dom"
 import FavoritesPage from "./pages/FavoritesPage"
 import NavigationBar from "./components/NavigationBar"
+import { useState } from "react"
 
 function App() {
 
 
   return (
     <div>
-      <NavigationBar />
+      <NavigationBar onLogoClick={() => setCurrentSearch("")}/>
     <main className= "app">
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route path="/" element={<HomePage />} />
         <Route path="/favorites" element={<FavoritesPage/>}/>
       </Routes>
     </main>

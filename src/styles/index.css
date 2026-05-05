@@ -47,13 +47,38 @@ h2 {
   font-size: 16px;
 }
 
+a {
+  font-size: 18px;
+}
+
 a:hover {
   color: #254962;
 }
 
-.app-name {
+.app-name a{
   color: #EDF7FD;
   font-size: 36px;
+  font-weight: 600;
+}
+
+.app-name a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-name a:hover, 
+.app-name a:focus,
+.app-name a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-title {
+  color: #EDF7FD;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin: 5px 0;
 }
 
 button {
@@ -75,5 +100,15 @@ button:focus-visible {
 }
 
 @media (min-width: 1024px) {
+    h2 {
+    font-size: 24px;
+  }
 
+  a {
+    font-size: 30px;
+  }
+
+  .page-title {
+  font-size: 30px;
+}
 }

@@ -9,7 +9,7 @@ function NavigationBar() {
             <Link to="/">HOME CINEMA</Link>
         </div>
         <div className="favorites-button">
-            <Link to="/favorites">Favorites</Link>
+            <Link to="/favorites">❤︎</Link>
         </div>
     </nav>)
 }

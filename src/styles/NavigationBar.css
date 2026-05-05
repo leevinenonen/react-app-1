@@ -1,6 +1,6 @@
 .navigation-bar {
     display: flex;
-    padding: 1rem 2rem;
+    padding: 1rem;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -15,24 +15,92 @@
 
 .favorites-button {
   text-align: right;
+  transition: all 0.3s ease;
+}
+
+.favorites-button a {
+  font-size: 30px;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.favorites-button:hover {
+  color: #254962;
+}
+
+.favorites-button:active {
+  transform: scale(0.98);
 }
 
 .app-name {
     width: 100%;
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
 }
 
-@media (max-width: 1024px) {
+.dropdown-toggle {
+  background-color: #173143;
+  border-color: #254962;
+  font-size: 18px;
+}
+
+.dropdown-toggle:hover {
+  background-color: #254962;
+}
+
+.dropdown-menu {
+  background-color: #173143;
+  opacity: 0.9;
+}
+
+.dropdown-menu {
+  color: #EDF7FD;
+}
+
+.dropdown-menu a:hover {
+  background-color: #254962;
+  color: #EDF7FD;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-name {
+  color: #EDF7FD;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.app-name a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+}
+
+.app-name a:hover, 
+.app-name a:focus,
+.app-name a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 1024px) {
   .navigation-bar {
-    padding: 1rem;
+    padding: 1rem 3rem;
   }
 
-  .app-name {
-    font-size: 24px;
+  .app-name a {
+    font-size: 36px;
   }
 
   .nav-link {
     padding: 1rem;
   }
+
+  .dropdown-toggle {
+  font-size: 30px;
+}
 }

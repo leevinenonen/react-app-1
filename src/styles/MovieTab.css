@@ -3,7 +3,7 @@
     border-radius: 8px;
     height: 100%;
     display: flex;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
     flex-direction: column;
     overflow: hidden;
     background-color: #101B23;
@@ -33,10 +33,15 @@
     transform: translateY(-10px);
 }
 
+/* Didn't look good when pressing fav button
+.movie-tab:active {
+    transform: translateY(5px);
+    opacity: 0.9;
+}*/
+
 .movie-upper-layer {
     position: absolute;
 }
-
 
 .movie-information {
     padding: 0.5rem;
@@ -44,6 +49,36 @@
 
 .movie-information p {
     opacity: 50%;
+}
+
+
+.fav-button {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    color: #EDF7FD;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    right: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.fav-button:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #254962;
+  transform: scale(1.1);
+}
+
+.fav-button:active {
+  transform: scale(0.9);
 }
 
 @media (min-width: 1024px) {
