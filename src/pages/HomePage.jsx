@@ -3,6 +3,7 @@ import {useState} from "react"
 import { searchPopularMovies } from "../services/api"
 import { searchMovies } from "../services/api"
 import {useEffect} from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function HomePage ({favorites, toggleFavorite}) {
     // Let's use useState to handle searching

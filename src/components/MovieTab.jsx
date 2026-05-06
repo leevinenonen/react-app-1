@@ -1,4 +1,5 @@
 import { FaHeart, FaRegHeart } from "react-icons/fa";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MovieTab({movie, toggleFavorite, isFavorite}) {
     function whenFavorited() {

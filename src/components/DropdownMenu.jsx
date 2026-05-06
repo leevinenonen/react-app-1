@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/DropdownMenu.css'
 //https://react-bootstrap.netlify.app/docs/components/dropdowns/
 import { FaBars } from "react-icons/fa";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DropdownMenu() {
   return (

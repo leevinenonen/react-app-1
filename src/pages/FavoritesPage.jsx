@@ -1,4 +1,5 @@
 import MovieTab from "../components/MovieTab";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function FavoritesPage({favorites, toggleFavorite}) {
     if (favorites.length===0) {
@@ -8,7 +9,7 @@ function FavoritesPage({favorites, toggleFavorite}) {
                 <p>Add favorite movies by clicking the heart!</p>
             </div>
         )}
-        
+
     return (
         <div className="favorites-container">
             <h2>Your Favorites</h2>

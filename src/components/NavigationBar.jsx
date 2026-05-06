@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom"
 import DropdownMenu from "./DropdownMenu"
 import { FaHeart, FaRegHeart } from "react-icons/fa";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavigationBar() {
     return (
