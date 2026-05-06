@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DropdownMenu() {
   return (
-    <DropdownButton className="dropdown-button" id="toggle-menu" title={<FaBars/>} arial-label="Menu">
+    <DropdownButton className="dropdown-button" id="toggle-menu" title={<FaBars/>} arial-label="Open menu">
       <Dropdown.Item as={Link} to="/" arial-label="Go to Home">
           Home
       </Dropdown.Item>

@@ -21,6 +21,6 @@ n. 30 tuntia ja tehtävänä kaikki
 
 W3C Css validator errorit ja warningit:
 
-Käytän react-bootstrappia, joka lisää omat css tiedostot repoon. Siellä on uutta cssää, jota validator flägää ongelmalliseksi. En koe tätä ongelmaksi, sillä olen testannut sivuni toimivaksi monella laitteella ja selaimella. Chromen Lighthouse reportin pisteet oliva 86 ja koen tämän tarpeeksi hyväksi. Parse Errorit ovat vain syntaksi-erroreita, jotka johtuvat luultavasti validaattorin iästä.
+Käytän react-bootstrappia, joka lisää omat css tiedostot repoon. Siellä on uutta cssää, jota validator flägää ongelmalliseksi. En koe tätä ongelmaksi, sillä olen testannut sivuni toimivaksi monella laitteella ja selaimella. Chromen Dev tools Lighthouse raportin pisteet sivulle olivat 86 ja koen tämän tarpeeksi hyväksi. Parse Errorit ovat vain syntaksi-erroreita, jotka johtuvat luultavasti validaattorin iästä.
 
 HTML validator menee läpi!
