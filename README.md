@@ -13,3 +13,14 @@ Opin hieman paremmin tekemään mukautuvan UI:n eri näytöille. UI jonka suunni
 Jos hyödynsitte tehtävän teossa tekoälyä, millä tavalla?
 
 Hyödynsin tekoälyä bugien löytämisessä ja syntaksin muistelussa. Käytin sitä myös esim. kysymään, miten lisään faviconin jne. Ylipäätään asioihin, joita en muistanut ja jotka oli nopeampi kysyä tekoälyltä sen sijaan, että hakisin esim. stack overflowsta tietoa.
+
+Leevi Nenonen
+Työtunnit ja tehtävät:
+n. 30 tuntia ja tehtävänä kaikki
+
+
+W3C Css validator errorit ja warningit:
+
+Käytän react-bootstrappia, joka lisää omat css tiedostot repoon. Siellä on uutta cssää, jota validator flägää ongelmalliseksi. En koe tätä ongelmaksi, sillä olen testannut sivuni toimivaksi monella laitteella ja selaimella. Chromen Lighthouse reportin pisteet oliva 86 ja koen tämän tarpeeksi hyväksi. Parse Errorit ovat vain syntaksi-erroreita, jotka johtuvat luultavasti validaattorin iästä.
+
+HTML validator menee läpi!
