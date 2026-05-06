@@ -24,3 +24,7 @@ W3C Css validator errorit ja warningit:
 Käytän react-bootstrappia, joka lisää omat css tiedostot repoon. Siellä on uutta cssää, jota validator flägää ongelmalliseksi. En koe tätä ongelmaksi, sillä olen testannut sivuni toimivaksi monella laitteella ja selaimella. Chromen Dev tools Lighthouse raportin pisteet sivulle olivat 86 ja koen tämän tarpeeksi hyväksi. Parse Errorit ovat vain syntaksi-erroreita, jotka johtuvat luultavasti validaattorin iästä.
 
 HTML validator menee läpi!
+
+
+Linkki sivulle:
+https://homecinema.vercel.app/
