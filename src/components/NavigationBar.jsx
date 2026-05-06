@@ -12,7 +12,7 @@ function NavigationBar() {
             <a href="/" arial-label="Go to home and refresh page">HOME CINEMA</a>
         </div>
         <div className="favorites-button">
-            <Link to="/favorites"><FaHeart arial-label="Go to favorites"/></Link>
+            <Link to="/favorites" arial-label="Go to favorites"><FaHeart arial-label="Go to favorites"/></Link>
         </div>
     </nav>)
 }

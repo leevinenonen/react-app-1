@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DropdownMenu() {
   return (
-    <DropdownButton className="dropdown-button" id="toggle-menu" title={<FaBars/>}>
-      <Dropdown.Item as={Link} to="/">
+    <DropdownButton className="dropdown-button" id="toggle-menu" title={<FaBars/>} arial-label="Menu">
+      <Dropdown.Item as={Link} to="/" arial-label="Go to Home">
           Home
       </Dropdown.Item>
-      <Dropdown.Item as={Link} to="/favorites">
+      <Dropdown.Item as={Link} to="/favorites" arial-label="Go to Favorites">
           Favorites
       </Dropdown.Item>
     </DropdownButton>
