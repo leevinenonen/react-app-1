@@ -12,7 +12,7 @@ function NavigationBar() {
             <a href="/" aria-label="Go to home and refresh page">HOME CINEMA</a>
         </div>
         <div className="favorites-button">
-            <Link to="/favorites" aria-label="Go to favorites"><FaHeart aria-label="Heart icon"/></Link>
+            <Link to="/favorites" aria-label="Go to favorites"><FaHeart/></Link>
         </div>
     </nav>)
 }

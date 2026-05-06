@@ -6,9 +6,10 @@ import '../styles/DropdownMenu.css'
 import { FaBars } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function DropdownMenu() {
+function DropdownMenu(props) {
   return (
-    <DropdownButton className="dropdown-button" id="toggle-menu" aria-label="Open menu" title={<FaBars/>} >
+    <DropdownButton className="dropdown-button" id="toggle-menu" aria-label="Open menu" title={<FaBars aria-hidden="true"/>} 
+    {...props}>
       <Dropdown.Item as={Link} to="/" aria-label="Go to Home">
           Home
       </Dropdown.Item>
