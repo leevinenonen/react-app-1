@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom"
 import DropdownMenu from "./DropdownMenu"
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 function NavigationBar() {
     return (
@@ -10,7 +11,7 @@ function NavigationBar() {
             <a href="/">HOME CINEMA</a>
         </div>
         <div className="favorites-button">
-            <Link to="/favorites">❤︎</Link>
+            <Link to="/favorites"><FaHeart/></Link>
         </div>
     </nav>)
 }

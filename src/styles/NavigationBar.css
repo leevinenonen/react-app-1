@@ -16,16 +16,17 @@
 .favorites-button {
   text-align: right;
   transition: all 0.3s ease;
+  padding: 0.5em 0em;
 }
 
-.favorites-button a {
-  font-size: 2em;
-  padding: 0 1rem;
+.favorites-button svg {
+  font-size: 1.5em;
+  padding: 0;
   transition: all 0.3s ease;
 }
 
-.favorites-button:hover {
-  color: #254962;
+.favorites-button svg:hover {
+  fill: #254962;
 }
 
 .favorites-button:active {
@@ -104,6 +105,6 @@
   font-size: 30px;
 }
 
-  .favorites-button a {
-  font-size: 2.5em;}
+  .favorites-button svg {
+    font-size: 1em;}
 }
