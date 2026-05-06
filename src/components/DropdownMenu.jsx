@@ -8,8 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DropdownMenu(props) {
   return (
-    <DropdownButton className="dropdown-button" id="toggle-menu" aria-label="Open menu" title={<FaBars aria-hidden="true"/>} 
-    {...props}>
+    <DropdownButton {...props}
+    className="dropdown-button" id="toggle-menu" title={<FaBars/>} aria-label="Open menu">
       <Dropdown.Item as={Link} to="/" aria-label="Go to Home">
           Home
       </Dropdown.Item>
