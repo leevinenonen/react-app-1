@@ -59,8 +59,8 @@ function HomePage ({favorites, toggleFavorite}) {
 
     return (
     <div className="home-page">
-        <form onSubmit={Search} className="search-box">
-            <input type="text" placeholder="Search for movies..." className="search-input" value={Searched} onChange={(e) => setSearched(e.target.value)}></input>
+        <form onSubmit={Search} className="search-box" id="movie-search-form">
+            <input type="text" placeholder="Search for movies..." className="search-input" id="movie-search-field" value={Searched} onChange={(e) => setSearched(e.target.value)}></input>
             <button type="submit" className="search-button">Search</button>
         </form>
 
