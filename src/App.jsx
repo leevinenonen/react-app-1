@@ -10,17 +10,28 @@ import {Routes, Route} from "react-router-dom"
 import FavoritesPage from "./pages/FavoritesPage"
 import NavigationBar from "./components/NavigationBar"
 import { useState } from "react"
+import { preconnect } from 'react-dom'
 
 function App() {
-
+  const [favorites, setFavorites] = useState([]);
+  const toggleFavorite = (movie) => {
+    setFavorites(prev => {
+      const isFav = prev.some(m => m.id === movie.id)
+      if (isFav) {
+        return prev.filter(m => m.id !== movie.id);
+      } else {
+        return [...prev, movie];
+      }
+    });
+  };
 
   return (
     <div>
-      <NavigationBar onLogoClick={() => setCurrentSearch("")}/>
+      <NavigationBar/>
     <main className= "app">
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/favorites" element={<FavoritesPage/>}/>
+        <Route path="/" element={<HomePage toggleFavorite={toggleFavorite} favorites={favorites} />} />
+        <Route path="/favorites" element={<FavoritesPage toggleFavorite={toggleFavorite} favorites={favorites} />}/>
       </Routes>
     </main>
     </div>

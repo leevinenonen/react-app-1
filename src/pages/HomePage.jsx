@@ -4,7 +4,7 @@ import { searchPopularMovies } from "../services/api"
 import { searchMovies } from "../services/api"
 import {useEffect} from "react"
 
-function HomePage () {
+function HomePage ({favorites, toggleFavorite}) {
     // Let's use useState to handle searching
     const [Searched, setSearched] = useState("")
     const [currentSearch, setCurrentSearch] = useState("");
@@ -69,9 +69,9 @@ function HomePage () {
         </h1>
 
         <div className="movie-grid">
-            {/*Let's use map function to map the movie objects */}
+            {/*Let's use map function to map the movie objects and pass favorite state */}
             {movies.map((movie) => (
-            <MovieTab movie={movie} key={movie.id}/>
+            <MovieTab movie={movie} key={movie.id} toggleFavorite={toggleFavorite} isFavorite={favorites.some(m => m.id === movie.id)}/>
             ))}
         </div>
     </div>)
