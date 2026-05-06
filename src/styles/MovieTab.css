@@ -39,10 +39,6 @@
     opacity: 0.9;
 }*/
 
-.movie-upper-layer {
-    position: absolute;
-}
-
 .movie-information {
     padding: 0.5rem;
 }
@@ -52,7 +48,8 @@
 }
 
 
-.fav-button {
+/*Old styling using headache inducing unicode
+    .fav-button {
     cursor: pointer;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
@@ -62,18 +59,53 @@
     width: 40px;
     height: 40px;
     font-size: 24px;
-    right: auto;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
     outline: none;
+    flex-shrink: 0;
+    min-width: 40px; 
+    min-height: 40px;
+    right: 0.1em;
+    top: 0.1em;
+    z-index: 10;
+    line-height: 1;
+    box-sizing: border-box;
+}*/
+
+.fav-button {
+    position: absolute;
+    top: 0.1em;
+    right: 0.1em;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    color: #EDF7FD;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 0;
+}
+
+.fav-button svg {
+    font-size: 18px;
+}
+
+
+.fav-button svg:hover {
+  fill: #254962;
 }
 
 .fav-button:hover {
-  background: rgba(0, 0, 0, 0.5);
-  color: #254962;
   transform: scale(1.1);
 }
 
@@ -87,5 +119,24 @@
     }
     .movie-release-date {
     font-size: 18px;
+    }
+
+    /* Old styling using headache inducing unicode
+    .fav-button {
+    width: 70px;
+    height: 70px;
+    font-size: 36px;
+    min-width: 70px; 
+    min-height: 70px;
+}*/
+
+    .fav-button {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        min-height: 60px;
+    }
+    .fav-button svg {
+        font-size: 28px;
     }
 }

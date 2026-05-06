@@ -6,7 +6,7 @@ function NavigationBar() {
     <nav className="navigation-bar">
         <DropdownMenu />
         <div className="app-name">
-            {/*Force refresh when clicking home cinema to get today's picks */}
+            {/*Force refresh when clicking home cinema to get "Today's picks" */}
             <a href="/">HOME CINEMA</a>
         </div>
         <div className="favorites-button">

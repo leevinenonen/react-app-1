@@ -3,10 +3,11 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import { Link } from 'react-router-dom';
 import '../styles/DropdownMenu.css'
 //https://react-bootstrap.netlify.app/docs/components/dropdowns/
+import { FaBars } from "react-icons/fa";
 
 function DropdownMenu() {
   return (
-    <DropdownButton className="dropdown-button" id="toggle-menu" title="Menu">
+    <DropdownButton className="dropdown-button" id="toggle-menu" title={<FaBars/>}>
       <Dropdown.Item as={Link} to="/">
           Home
       </Dropdown.Item>
