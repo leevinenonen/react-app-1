@@ -8,31 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DropdownMenu() {
   return (
-    <DropdownButton className="dropdown-button" id="toggle-menu" title={<FaBars/>} arial-label="Open menu">
-      <Dropdown.Item as={Link} to="/" arial-label="Go to Home">
+    <DropdownButton className="dropdown-button" id="toggle-menu" aria-label="Open menu" title={<FaBars/>} >
+      <Dropdown.Item as={Link} to="/" aria-label="Go to Home">
           Home
       </Dropdown.Item>
-      <Dropdown.Item as={Link} to="/favorites" arial-label="Go to Favorites">
+      <Dropdown.Item as={Link} to="/favorites" aria-label="Go to Favorites">
           Favorites
       </Dropdown.Item>
     </DropdownButton>
-
-
-
-    /*<Dropdown className="cinema-dropdown" autoClose={true}>
-      <Dropdown.Toggle id="dropdown-menu" className="toggle-menu">
-        <span>Menu</span>
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu variant="custom" className="menu-items">
-        <Dropdown.Item as={Link} to="/">
-          Home
-        </Dropdown.Item>
-        <Dropdown.Item as={Link} to="/favorites">
-          Favorites
-        </Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>*/
   );
 }
 

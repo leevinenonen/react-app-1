@@ -6,13 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function NavigationBar() {
     return (
     <nav className="navigation-bar">
-        <DropdownMenu arial-label="Open menu"/>
+        <DropdownMenu aria-label="Open menu"/>
         <div className="app-name">
             {/*Force refresh when clicking home cinema to get "Today's picks" */}
-            <a href="/" arial-label="Go to home and refresh page">HOME CINEMA</a>
+            <a href="/" aria-label="Go to home and refresh page">HOME CINEMA</a>
         </div>
         <div className="favorites-button">
-            <Link to="/favorites" arial-label="Go to favorites"><FaHeart arial-label="Go to favorites"/></Link>
+            <Link to="/favorites" aria-label="Go to favorites"><FaHeart aria-label="Heart icon"/></Link>
         </div>
     </nav>)
 }
