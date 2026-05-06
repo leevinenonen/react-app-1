@@ -8,7 +8,7 @@ function MovieTab({movie, toggleFavorite, isFavorite}) {
     return (
     <div className="movie-tab">
         <div className="movie-img-div"><img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}></img></div>
-        <button aria-label={isFavorited ? `Remove ${movie.title} from favorites` : `Add ${movie.title} to favorites`}
+        <button aria-label={isFavorite ? `Remove ${movie.title} from favorites` : `Add ${movie.title} to favorites`}
         className={`fav-button ${isFavorite ? 'active' : ''}`}
         onClick={() => toggleFavorite(movie)}>
             {isFavorite ? <FaHeart className="favorited-icon"/> : <FaRegHeart/>}
