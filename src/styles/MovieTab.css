@@ -113,6 +113,10 @@
   transform: scale(0.9);
 }
 
+.favorited-icon {
+    fill: rgb(244, 64, 64);
+}
+
 @media (min-width: 1024px) {
   .movie-title {
     font-size: 24px;

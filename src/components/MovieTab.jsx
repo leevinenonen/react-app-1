@@ -9,7 +9,7 @@ function MovieTab({movie, toggleFavorite, isFavorite}) {
         <div className="movie-img-div"><img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}></img></div>
         <button className={`fav-button ${isFavorite ? 'active' : ''}`}
         onClick={() => toggleFavorite(movie)}>
-            {isFavorite ? <FaHeart color="red"/> : <FaRegHeart/>}
+            {isFavorite ? <FaHeart className="favorited-icon"/> : <FaRegHeart/>}
         </button>
         <div className="movie-information">
             <h2 className="movie-title">{movie.title}</h2>
