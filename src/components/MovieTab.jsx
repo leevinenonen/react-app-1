@@ -11,7 +11,7 @@ function MovieTab({movie, toggleFavorite, isFavorite}) {
         <button aria-label={isFavorite ? `Remove ${movie.title} from favorites` : `Add ${movie.title} to favorites`}
         className={`fav-button ${isFavorite ? 'active' : ''}`}
         onClick={() => toggleFavorite(movie)}>
-            {isFavorite ? <FaHeart className="favorited-icon"/> : <FaRegHeart/>}
+            {isFavorite ? <FaHeart className="favorited-icon" aria-hidden="true"/> : <FaRegHeart aria-hidden="true"/>}
         </button>
         <div className="movie-information">
             <h2 className="movie-title">{movie.title}</h2>
